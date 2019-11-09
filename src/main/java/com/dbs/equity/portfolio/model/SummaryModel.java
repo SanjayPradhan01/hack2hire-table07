@@ -1,34 +1,14 @@
-package com.dbs.equity.portfolio.entity;
+package com.dbs.equity.portfolio.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "DBS_PORTFOLIO_SUMMARY")
-public class PortfolioSummaryEntity {
+public class SummaryModel {
 	
-	   @Id
-	   private Integer id;
-	   private String exchangename; 		
-	   private String isin;        		
-	   private String stockname;    		
-	   private Double averagecmp;  		
-	   private Double realizedprofitloss;  
-	   private Double unrealizedprofitloss;
-	   private Double currentcmp;
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
-	}
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(Integer id) {
-		this.id = id;
-	}
+		private String exchangename;
+	   private String isin;
+	   private String stockname;
+	   private String averagecmp;
+	   private String realizedprofitloss;
+	   private String unrealizedprofitloss;
+	   private String currentcmp;
 	/**
 	 * @return the exchangename
 	 */
@@ -68,50 +48,51 @@ public class PortfolioSummaryEntity {
 	/**
 	 * @return the averagecmp
 	 */
-	public Double getAveragecmp() {
+	public String getAveragecmp() {
 		return averagecmp;
 	}
 	/**
 	 * @param averagecmp the averagecmp to set
 	 */
-	public void setAveragecmp(Double averagecmp) {
+	public void setAveragecmp(String averagecmp) {
 		this.averagecmp = averagecmp;
 	}
 	/**
 	 * @return the realizedprofitloss
 	 */
-	public Double getRealizedprofitloss() {
+	public String getRealizedprofitloss() {
 		return realizedprofitloss;
 	}
 	/**
 	 * @param realizedprofitloss the realizedprofitloss to set
 	 */
-	public void setRealizedprofitloss(Double realizedprofitloss) {
+	public void setRealizedprofitloss(String realizedprofitloss) {
 		this.realizedprofitloss = realizedprofitloss;
 	}
 	/**
 	 * @return the unrealizedprofitloss
 	 */
-	public Double getUnrealizedprofitloss() {
+	public String getUnrealizedprofitloss() {
 		return unrealizedprofitloss;
 	}
 	/**
 	 * @param unrealizedprofitloss the unrealizedprofitloss to set
 	 */
-	public void setUnrealizedprofitloss(Double unrealizedprofitloss) {
+	public void setUnrealizedprofitloss(String unrealizedprofitloss) {
 		this.unrealizedprofitloss = unrealizedprofitloss;
 	}
 	/**
 	 * @return the currentcmp
 	 */
-	public Double getCurrentcmp() {
+	public String getCurrentcmp() {
 		return currentcmp;
 	}
 	/**
 	 * @param currentcmp the currentcmp to set
 	 */
-	public void setCurrentcmp(Double currentcmp) {
+	public void setCurrentcmp(String currentcmp) {
 		this.currentcmp = currentcmp;
 	}
+	
 	   
 }
