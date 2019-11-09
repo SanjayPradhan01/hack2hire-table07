@@ -62,7 +62,37 @@ public class SummaryService {
 		model4.setRealizedprofitloss("397709.65");
 		model4.setStockname("UPL");
 		model4.setUnrealizedprofitloss("27458.65");
-		list.add(model4);	
+		list.add(model4);
+		
+		SummaryModel model5 = new SummaryModel();
+		model5.setAveragecmp("4450");
+		model5.setCurrentcmp("4193.15");
+		model5.setExchangename("BSE");
+		model5.setIsin("INBAJFIN");
+		model5.setRealizedprofitloss("36530722.8");
+		model5.setStockname("BajajFinance");
+		model5.setUnrealizedprofitloss("-2237677.2");
+		list.add(model5);
+		
+		SummaryModel model6 = new SummaryModel();
+		model6.setAveragecmp("4450");
+		model6.setCurrentcmp("4193.15");
+		model6.setExchangename("BSE");
+		model6.setIsin("INBAJFIN");
+		model6.setRealizedprofitloss("36530722.8");
+		model6.setStockname("BajajFinance");
+		model6.setUnrealizedprofitloss("-2237677.2");
+		list.add(model6);
+		
+		SummaryModel model7 = new SummaryModel();
+		model7.setAveragecmp("6700");
+		model7.setCurrentcmp("8778");
+		model7.setExchangename("BSE");
+		model7.setIsin("INBAFINSIV");
+		model7.setRealizedprofitloss("7162848");
+		model7.setStockname("BajajFinServ");
+		model7.setUnrealizedprofitloss("1695948");
+		list.add(model6);		
 		
 		return list;
 		
