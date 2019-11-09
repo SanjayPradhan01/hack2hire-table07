@@ -21,6 +21,49 @@ public class SummaryService {
 		model.setStockname("Infosys");
 		model.setUnrealizedprofitloss("15.52");
 		list.add(model);
+		
+		SummaryModel model1 = new SummaryModel();
+		model1.setAveragecmp("1100");
+		model1.setCurrentcmp("1442");
+		model1.setExchangename("BSE");
+		model1.setIsin("INRELIND");
+		model1.setRealizedprofitloss("7603666");
+		model1.setStockname("Reliance");
+		model1.setUnrealizedprofitloss("1803366");
+		list.add(model1);
+		
+		SummaryModel model2 = new SummaryModel();
+		model2.setAveragecmp("69");
+		model2.setCurrentcmp("68.2");
+		model2.setExchangename("BSE");
+		model2.setIsin("INYESBAN");
+		model2.setRealizedprofitloss("206100");
+		model2.setStockname("YesBank");
+		model2.setUnrealizedprofitloss("900");
+		list.add(model2);
+		
+		
+		SummaryModel model3 = new SummaryModel();
+		model3.setAveragecmp("199");
+		model3.setCurrentcmp("220.2");
+		model3.setExchangename("BSE");
+		model3.setIsin("ININFTEL");
+		model3.setRealizedprofitloss("44040");
+		model3.setStockname("InfraTel");
+		model3.setUnrealizedprofitloss("4240");
+		list.add(model3);		
+		
+		
+		SummaryModel model4 = new SummaryModel();
+		model4.setAveragecmp("567");
+		model4.setCurrentcmp("609.05");
+		model4.setExchangename("BSE");
+		model4.setIsin("INUPLLTD");
+		model4.setRealizedprofitloss("397709.65");
+		model4.setStockname("UPL");
+		model4.setUnrealizedprofitloss("27458.65");
+		list.add(model4);	
+		
 		return list;
 		
 	}
