@@ -1,12 +1,14 @@
 package com.dbs.equity.portfolio.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "DBS_PORTFOLIO_SUMMARY")
 public class PortfolioSummaryEntity {
 	
+	   @Id
 	   private Integer id;
 	   private String exchangename; 		
 	   private String isin;        		
