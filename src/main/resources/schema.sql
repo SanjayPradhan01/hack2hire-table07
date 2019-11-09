@@ -25,13 +25,15 @@ CREATE TABLE DBS_PORTFOLIO_TRANSACTION
 
 CREATE TABLE DBS_PORTFOLIO_SUMMARY
 (
-   ExchangeName 		varchar2(32),
-   ISIN         		varchar2(32),
-   StockName    		varchar2(64),
-   AverageCMP   		Double,
-   RealizedProfit/Loss  Double,
-   UnRealizedProfit/Loss Double,
-   CurrentCMP			Double
+   id					integer not null;
+   exchangename 		varchar2(32),
+   isin         		varchar2(32),
+   stockname    		varchar2(64),
+   averagecmp   		Double,
+   realizedprofitloss  Double,
+   unrealizedprofitloss Double,
+   currentcmp			Double,
+   primary key(id)
    );
    
    CREATE TABLE FX_EXCHANGE
